@@ -13,19 +13,16 @@
          同源部署（Worker/Pages）无需配置，前端默认使用 window.location.origin。 -->
     <!-- <meta name="apiBase" content="https://your-worker-domain"> -->
 
-    <link
-      rel="stylesheet"
-      href="https://cdn-font.hyperos.mi.com/font/css?family=MiSans_VF:VF:Chinese_Simplify,Latin&display=swap"
-      media="print"
-      onload="this.media = 'all'"
-    />
-    <script type="module" crossorigin src="./assets/index-9ipXsnrh.js"></script>
+    <!-- 正文网页字体（MiSans VF）不在此处硬编码：CFSM 会对主题 HTML 下发
+         Content-Security-Policy，默认不放行小米字体 CDN，直接写在这里会被拦截并在
+         控制台报错。改由 src/utils/webFont.ts 读取实际策略后按需注入。 -->
+    <script type="module" crossorigin src="./assets/index-D5j3wqmb.js"></script>
     <link rel="modulepreload" crossorigin href="./assets/rolldown-runtime-QTnfLwEv.js">
     <link rel="modulepreload" crossorigin href="./assets/echarts-COnLgs33.js">
     <link rel="modulepreload" crossorigin href="./assets/naive-ui-Dul1iJhL.js">
     <link rel="modulepreload" crossorigin href="./assets/vue-vendor-D9V60uMi.js">
     <link rel="modulepreload" crossorigin href="./assets/vueuse-BKlCGKUh.js">
-    <link rel="stylesheet" crossorigin href="./assets/index-CUM82KdZ.css">
+    <link rel="stylesheet" crossorigin href="./assets/index-R58-nQ-l.css">
   </head>
 
   <body>
